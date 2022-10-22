@@ -2,18 +2,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.weather-card {
-  max-width: 600px;
-  margin: 100px auto;
-  padding: 20px;
-  border: 1px solid #dadde1;
-  border-radius: 7px;
-  background-image: url("https://images.unsplash.com/photo-1612404748636-568ca4155994?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
-}
-
 h1 {
   color: rgb(92, 92, 92);
-  font-size: 38px;
+  font-size: 34px;
   font-weight: 100;
   text-align: right;
   line-height: 28px;
@@ -33,6 +24,22 @@ p {
   color: rgb(92, 92, 92);
   text-align: left;
   font-size: 16px;
+}
+
+.weather-wrapper {
+  max-width: 600px;
+  margin: 100px auto;
+}
+
+.weather-card {
+  padding: 20px;
+  border: 1px solid #dadde1;
+  border-radius: 7px;
+  background-image: url("https://images.unsplash.com/photo-1612404748636-568ca4155994?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+}
+
+.weather-temperature img {
+  margin-top: 200px;
 }
 
 .humidity,
