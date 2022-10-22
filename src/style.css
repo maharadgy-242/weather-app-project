@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.weather-card {
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 20px;
+  border: 1px solid #dadde1;
+  border-radius: 7px;
+  background-image: url("https://images.unsplash.com/photo-1612404748636-568ca4155994?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+}
+
+h1 {
+  color: rgb(92, 92, 92);
+  font-size: 38px;
+  font-weight: 100;
+  text-align: right;
+  line-height: 28px;
+  margin-bottom: 4px;
+}
+
+li {
+  list-style: none;
+  color: rgb(92, 92, 92);
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 19px;
+  text-align: right;
+}
+
+p {
+  color: rgb(92, 92, 92);
+  text-align: left;
+  font-size: 16px;
+}
+
+.humidity,
+.wind {
+  margin-top: -20px;
+}
