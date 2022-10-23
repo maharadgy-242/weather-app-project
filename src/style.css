@@ -9,21 +9,22 @@ h1 {
   text-align: right;
   line-height: 28px;
   margin-bottom: 4px;
+  margin-top: -4px;
 }
 
 li {
   list-style: none;
   color: rgb(92, 92, 92);
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 100;
-  line-height: 19px;
+  line-height: 16px;
   text-align: right;
 }
 
 p {
   color: rgb(92, 92, 92);
   text-align: left;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .weather-wrapper {
@@ -42,12 +43,12 @@ p {
   margin-right: 5px;
   height: 64px;
   width: 64px;
-  margin-top: -2px;
+  margin-top: -4px;
 }
 
 .weather-temperature strong {
   color: rgb(33, 33, 33);
-  font-size: 64px;
+  font-size: 54px;
   line-height: 1;
   font-weight: 400;
 }
@@ -61,6 +62,10 @@ p {
 
 .weather-temperature a {
   text-decoration: none;
+}
+
+.wether-details {
+  margin-left: -10px;
 }
 
 .humidity,
