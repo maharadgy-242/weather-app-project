@@ -22,7 +22,6 @@ function formatDate(timestamp) {
 }
 
 function displayTemperatire(response) {
-  console.log(response.data);
   let humidityElement = document.querySelector("#humidity");
   humidityElement.innerHTML = response.data.main.humidity;
   let windElement = document.querySelector("#wind");
