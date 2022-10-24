@@ -1,5 +1,12 @@
 function displayTemperatire(response) {
   console.log(response.data);
+  let humidityElement = document.querySelector(".humidity");
+  humidityElement.innerHTML = response.data.main.humidity;
+  let windElement = document.querySelector(".wind");
+  windElement.innerHTML = Math.round(response.data.wind.speed);
+
+  let feelLikeElement = document.querySelector(".feels-like");
+  feelLikeElement.innerHTML = Math.round(response.data.main.feels_like);
   let cityElement = document.querySelector("#city");
   cityElement.innerHTML = response.data.name;
   let temperatureElement = document.querySelector("#temperature");
