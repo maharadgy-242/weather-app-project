@@ -45,6 +45,8 @@ function displayTemperatire(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
+
+  celsiusTemp = Math.round(response.data.main.temp);
 }
 
 function search(city) {
@@ -59,17 +61,28 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
-search("Milan");
+let celsiusTemp = null;
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
 function showFahrenheitTemp(event) {
   event.preventDefault();
-  let FahrenheitTemperature = (14 * 9) / 5 + 32;
+  let FahrenheitTemperature = (celsiusTemp * 9) / 5 + 32;
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(FahrenheitTemperature);
 }
 
+function showCelsiusTemp(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = celsiusTemp;
+}
+
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", showFahrenheitTemp);
+
+let celsiustLink = document.querySelector("#celsius-link");
+celsiustLink.addEventListener("click", showCelsiusTemp);
+
+search("Milan");
