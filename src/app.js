@@ -21,6 +21,35 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElemnt = document.querySelector("#forecast");
+
+  let days = ["Mon", "Tue", "Wen", "Thu", "Fri", "Sat"];
+
+  let forecastHtml = `<div class = "row">`;
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `
+              <div class="col-2">
+                <div class="weather-forecast-days">${day}</div>
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png"
+                  alt=""
+                  id="weather-forecast-days-image"
+                />
+                <div class="weather-forecast-temperature">
+                  <span class="weather-forecast-temperature-max">14</span>
+                  <span class="weather-forecast-temperature-min">9</span>
+                </div>
+              </div>`;
+  });
+
+  forecastHtml = forecastHtml + `</div>`;
+  forecastElemnt.innerHTML = forecastHtml;
+  console.log(forecastHtml);
+}
+
 function displayTemperatire(response) {
   let humidityElement = document.querySelector("#humidity");
   humidityElement.innerHTML = response.data.main.humidity;
@@ -62,6 +91,8 @@ function handleSubmit(event) {
 }
 
 let celsiusTemp = null;
+
+displayForecast();
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
