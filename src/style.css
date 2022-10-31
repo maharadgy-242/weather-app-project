@@ -92,3 +92,29 @@ p {
 .weather-temperature .fahrengeit-active:hover {
   text-decoration: none;
 }
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.weather-forecast-days {
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+.weather-forecast-temperature {
+  font-size: 13px;
+}
+
+.weather-forecast-temperature-min {
+  color: rgb(92, 92, 92);
+}
+
+.weather-forecast-temperature-max {
+  opacity: 0.8;
+}
+
+#weather-forecast-days-image {
+  width: 56%;
+}
