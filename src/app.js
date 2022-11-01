@@ -31,7 +31,7 @@ function displayForecast() {
     forecastHtml =
       forecastHtml +
       `
-              <div class="col-2">
+              <div class="col-2" id="forecast-block">
                 <div class="weather-forecast-days">${day}</div>
                 <img
                   src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png"
@@ -47,7 +47,6 @@ function displayForecast() {
 
   forecastHtml = forecastHtml + `</div>`;
   forecastElemnt.innerHTML = forecastHtml;
-  console.log(forecastHtml);
 }
 
 function displayTemperatire(response) {

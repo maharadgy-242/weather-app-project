@@ -16,8 +16,22 @@
     <div class="container">
       <div class="weather-wrapper">
         <div class="weather-card">
+          <div class="row moon-icon">
+            <div class="col-1">🌜</div>
+            <div class="col-1">🌝</div>
+            <div class="col-1">🌔</div>
+            <div class="col-1">🌓</div>
+            <div class="col-1">🌒</div>
+            <div class="col-1">🌑</div>
+            <div class="col-1">🌚</div>
+            <div class="col-1">🌘</div>
+            <div class="col-1">🌗</div>
+            <div class="col-1">🌖</div>
+            <div class="col-1">🌕</div>
+            <div class="col-1">🌛</div>
+          </div>
           <div class="row">
-            <div class="col-4">
+            <div class="col-5">
               <div class="d-flex weather-temperature">
                 <img src="" alt="" id="icon" />
                 <!-- может быть что-то не работать с этим float-left в img -->
@@ -35,7 +49,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-4 wether-details">
+            <div class="col-3 wether-details">
               <p class="feels-like">
                 Feels like: <span id="feels-like"></span>°C
               </p>
@@ -50,7 +64,7 @@
               </ul>
             </div>
           </div>
-          <form id="search-form" class="mb-3">
+          <form id="search-form">
             <div class="row">
               <div class="col-9">
                 <input
@@ -70,6 +84,20 @@
               </div>
             </div>
           </form>
+          <div class="row moon-icon2">
+            <div class="col-1">🌑</div>
+            <div class="col-1">🌒</div>
+            <div class="col-1">🌓</div>
+            <div class="col-1">🌔</div>
+            <div class="col-1">🌝</div>
+            <div class="col-1">🌜</div>
+            <div class="col-1">🌛</div>
+            <div class="col-1">🌕</div>
+            <div class="col-1">🌖</div>
+            <div class="col-1">🌗</div>
+            <div class="col-1">🌘</div>
+            <div class="col-1">🌚</div>
+          </div>
           <div class="weather-forecast" id="forecast"></div>
         </div>
         <small>
