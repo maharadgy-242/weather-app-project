@@ -38,10 +38,10 @@ p {
 
 .weather-card {
   padding: 20px;
-  border: 1px solid #dadde1;
+  border: 1px solid #c8cfd6;
+  box-shadow: 0 0 5px 8px rgba(184, 203, 209, 0.5);
   border-radius: 7px;
   background-image: url(https://png.pngtree.com/thumb_back/fw800/back_pic/00/05/33/86562656f65b38e.png);
-  /* background-image: url("https://images.unsplash.com/photo-1612404748636-568ca4155994?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"); */
 }
 
 .moon-icon {
