@@ -61,6 +61,7 @@ p {
   font-size: 54px;
   line-height: 1;
   font-weight: 400;
+  margin-left: -10px;
 }
 
 .weather-temperature .units {
@@ -142,6 +143,7 @@ p {
   background: rgba(217, 240, 253, 0.603);
   border-radius: 7px;
   margin-right: 7px;
+  margin-bottom: 3px;
 }
 
 #icon {
