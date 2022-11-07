@@ -143,3 +143,8 @@ p {
   border-radius: 7px;
   margin-right: 7px;
 }
+
+#icon {
+  background-color: rgba(203, 235, 253, 0.719);
+  border-radius: 30px;
+}
