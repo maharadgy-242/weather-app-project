@@ -106,20 +106,23 @@ p {
 }
 
 .weather-forecast-days {
-  font-size: 15px;
-  opacity: 0.8;
+  font-size: 16px;
+  opacity: 0.9;
+  margin-top: 10px;
 }
 
 .weather-forecast-temperature {
-  font-size: 13px;
+  margin-bottom: 10px;
 }
 
 .weather-forecast-temperature-min {
   color: rgb(129, 129, 129);
+  font-size: 14px;
 }
 
 .weather-forecast-temperature-max {
   color: rgb(75, 75, 75);
+  font-size: 15px;
 }
 
 #city {
@@ -135,7 +138,7 @@ p {
 }
 
 #weather-forecast-days-image {
-  width: 56%;
+  width: 75%;
 }
 
 #forecast-block {
