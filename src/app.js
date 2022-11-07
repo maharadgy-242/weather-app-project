@@ -74,6 +74,7 @@ function getDaysForecast(coordinates) {
 }
 
 function displayTemperatire(response) {
+  console.log(response);
   let humidityElement = document.querySelector("#humidity");
   humidityElement.innerHTML = response.data.main.humidity;
   let windElement = document.querySelector("#wind");
