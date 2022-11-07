@@ -39,7 +39,7 @@ p {
 .weather-card {
   padding: 20px;
   border: 1px solid #c8cfd6;
-  box-shadow: 0 0 5px 8px rgba(184, 203, 209, 0.5);
+  box-shadow: 0.4em 0.4em 20px 10px rgba(135, 144, 150, 0.603);
   border-radius: 7px;
   background-image: url(https://png.pngtree.com/thumb_back/fw800/back_pic/00/05/33/86562656f65b38e.png);
 }
@@ -144,9 +144,10 @@ p {
   border-radius: 7px;
   margin-right: 7px;
   margin-bottom: 3px;
+  box-shadow: 0.4em 0.4em 10px 3px rgba(135, 144, 150, 0.603);
 }
 
 #icon {
-  background-color: rgba(203, 235, 253, 0.719);
+  background-color: rgba(217, 240, 253, 0.603);
   border-radius: 30px;
 }
